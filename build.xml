@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<project name="etcetera" basedir="." default="security:check">
+    <import file="vendor/bitexpert/phing-securitychecker/build.xml" />
+
+    <target name="sniff">
+        <exec executable="./vendor/bin/phpcs"
+              passthru="true"
+              checkreturn="true">
+            <arg value="--standard=PSR2"/>
+            <arg path="${phing.dir}/src"/>
+        </exec>
+    </target>
+
+    <target name="lint">
+        <exec executable="php"
+              passthru="true"
+              checkreturn="true">
+            <arg value="-l"/>
+            <arg path="${phing.dir}/src"/>
+        </exec>
+    </target>
+</project>

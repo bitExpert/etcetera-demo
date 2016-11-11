@@ -1,0 +1,106 @@
+entities:
+  person:
+    properties:
+        firstname:
+          candidates:
+            First Name: 1
+        lastname:
+          candidates:
+            Last Name: 1
+        email:
+          candidates:
+            Email: 1
+          converters:
+            - toLowercase
+
+  person_yahoo:
+    properties:
+      firstname:
+        candidates:
+          First Name: 1
+      lastname:
+        candidates:
+          Last Name: 1
+      email:
+        candidates:
+          Email: 1
+        mandatory: true
+        converters:
+          - toLowercase
+        filters:
+          - restrictToYahoo
+
+  person_yahoo_filtered:
+    properties:
+      firstname:
+        candidates:
+          First Name: 1
+      lastname:
+        candidates:
+          Last Name: 1
+      email:
+        candidates:
+          Email: 1
+        mandatory: true
+        converters:
+          - toLowercase
+        filters:
+          - restrictToYahoo
+    filters:
+      - firstnamelastname
+
+  person_yahoo_filtered_w_id:
+    properties:
+      firstname:
+        candidates:
+          First Name: 1
+      lastname:
+        candidates:
+          Last Name: 1
+      email:
+        candidates:
+          Email: 1
+        mandatory: true
+        converters:
+          - toLowercase
+        filters:
+          - restrictToYahoo
+    filters:
+      - firstnamelastname
+    decorators:
+      - uuid
+
+relations:
+  original_email:
+    from: person
+    properties:
+      email:
+        candidates:
+          Email: 1
+
+  original_email_yahoo:
+    from: person_yahoo
+    properties:
+      email:
+        candidates:
+          Email: 1
+
+  original_email_yahoo_filtered:
+      from: person_yahoo_filtered
+      properties:
+        email:
+          candidates:
+            Email: 1
+          converters:
+            - toLowercase
+
+  original_email_yahoo_filtered_w_id:
+      from: person_yahoo_filtered_w_id
+      properties:
+        email:
+          candidates:
+            Email: 1
+        user_id:
+          candidates:
+            from.id: 1
+
