@@ -1,8 +1,9 @@
 # etcetera-demo
-A small example project as showcase and tutorial for etcetera
+A small example project as showcase and tutorial for [etcetera](https://github.com/bitExpert/etcetera)
 
 ## Requirements
  - php7.0 (php7.0 php7.0-xml php7.0-mbstring  php7.0-zip)
+ - composer
  
 ## Using the demo
 1. Clone the project
