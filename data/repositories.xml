@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<repositories>
+    <repository id="101">
+        <name>disco</name>
+        <language>php</language>
+        <url>https://github.com/bitExpert/disco</url>
+        <description>Container-Interop compatible Dependency Injection Container for PHP.</description>
+    </repository>
+    <repository id="102">
+        <name>adrenaline</name>
+        <language>php</language>
+        <url>https://github.com/bitExpert/adrenaline</url>
+        <description>A PSR-7 micro framework built on top of the Adroit middleware to speed up your development ;)</description>
+    </repository>
+    <repository id="103">
+        <name>adroit</name>
+        <language>php</language>
+        <url>https://github.com/bitExpert/adroit</url>
+        <description>ADR/PSR-7 middleware</description>
+    </repository>
+    <repository id="104">
+        <name>mntyjs</name>
+        <language>JavaScript</language>
+        <url>https://github.com/bitExpert/mntyjs</url>
+        <description>Lightweight plugin system based on require.js, jQuery and Base.js.</description>
+    </repository>
+    <repository id="105">
+        <name>magento2-force-login</name>
+        <language>php</language>
+        <url>https://github.com/bitExpert/magento2-force-login</url>
+        <description>Force Login Module for Magento 2</description>
+    </repository>
+    <repository id="106">
+        <name>pathfinder</name>
+        <language>php</language>
+        <url>https://github.com/bitExpert/pathfinder</url>
+        <description>A PHP routing component</description>
+    </repository>
+</repositories>

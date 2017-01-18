@@ -1,10 +1,14 @@
 # etcetera-demo
 A small example project as showcase and tutorial for etcetera
 
+## Requirements
+ - php7.0 (php7.0 php7.0-xml php7.0-mbstring  php7.0-zip)
+ 
 ## Using the demo
 1. Clone the project
-2. run ```php run.php``` from project root
-3. See what happens :-)
+1. run ```composer update```
+1. run ```php runXlsx.php``` and/or ```php runXml.php``` from project root
+1. See what happens :-)
 
 ## What does the demo do?
 If you look at ```/data/data.xlsx``` you'll find a sheet with dummy data 

@@ -1,0 +1,15 @@
+entities:
+  repository:
+    properties:
+      title:
+        candidates:
+          name: 1
+      language:
+        candidates:
+          language: 1
+      language:
+        candidates:
+          language: 1
+      description:
+        candidates:
+          description: 1

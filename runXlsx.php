@@ -2,6 +2,7 @@
 require 'src/bootstrap.php';
 
 use bitExpert\Etcetera\Extractor\Config\YamlConfigReader;
+
 new bitExpert\Etcetera\Extractor\Config\JsonConfigReader;
 use bitExpert\Etcetera\Extractor\StandardExtractorFactory;
 use bitExpert\Etcetera\Extractor\Property\PropertyConverterTypeFactory;
@@ -21,10 +22,10 @@ use bitExpert\EtceteraDemo\Extractor\Entity\Decorator\Uuid4Decorator;
  * You may either use Yaml or Json to configure the extractor
  */
 /*$configReader = new YamlConfigReader();
-$config = $configReader->read($currentDir . '/config/extractor.yml');*/
+$config = $configReader->read($currentDir . '/config/people/extractor.yml');*/
 
 $configReader = new \bitExpert\Etcetera\Extractor\Config\JsonConfigReader();
-$config = $configReader->read('config/extractor.json');
+$config = $configReader->read('config/people/extractor.json');
 
 // create the extractor factory
 $extractorFactory = new StandardExtractorFactory();
@@ -74,11 +75,11 @@ $extractor = $extractorFactory->create($config);
 // instanciate the reader
 $reader = new Excel2007Reader();
 // set the filename of the file to read
-$reader->setFilename(__DIR__ . '/data/data.xlsx');
+$reader->setFilename(__DIR__ . '/data/people.xlsx');
 
 // instanciate the writer
 //$writer = new ConsoleWriter();
-$writer = new CsvWriter(__DIR__ . '/out', ';');
+$writer = new CsvWriter(__DIR__ . '/out/people', ';');
 
 // instanciate the processor using reader, extractor and writer
 $processor = new Processor($reader, $extractor, $writer);
