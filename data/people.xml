@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<people>
+  <person>
+    <name>
+      <first_name>Casper</first_name>
+      <last_name>Rice</last_name>
+    </name>
+    <address>
+      <street>5th Street East</street>
+      <number>23</number>
+    </address>
+    <birthdate>
+      <day>01</day>
+      <month>11</month>
+      <year>1967</year>
+    </birthdate>
+    <email>wBrown@yahoo.com</email>
+  </person>
+  <person>
+    <name>
+      <first_name>Kristina</first_name>
+      <last_name>Grant</last_name>
+    </name>
+    <address>
+      <street>Fairway Drive</street>
+      <number>12</number>
+    </address>
+    <birthdate>
+      <day>11</day>
+      <month>12</month>
+      <year>1980</year>
+    </birthdate>
+    <email>Caesar90@Orn.com</email>
+  </person>
+  <person>
+    <name>
+      <first_name>Ariel</first_name>
+      <last_name>Kris</last_name>
+    </name>
+    <address>
+      <street>Ridge Street</street>
+      <number>58</number>
+    </address>
+    <birthdate>
+      <day>23</day>
+      <month>05</month>
+      <year>1955</year>
+    </birthdate>
+    <email>uZiemann@Yundt.org</email>
+  </person>
+  <person>
+    <name>
+      <first_name>Watson</first_name>
+      <last_name>Heller</last_name>
+    </name>
+    <address>
+      <street>Arlington Street</street>
+      <number>56</number>
+    </address>
+    <birthdate>
+      <day>18</day>
+      <month>08</month>
+      <year>1991</year>
+    </birthdate>
+    <email>mDibbert@hotmail.com</email>
+  </person>
+  <person>
+    <name>
+      <first_name>Jewel</first_name>
+      <last_name>Ullrich</last_name>
+    </name>
+    <address>
+      <street>Rainbow Rd.</street>
+      <number>99</number>
+    </address>
+    <birthdate>
+      <day>03</day>
+      <month>04</month>
+      <year>1987</year>
+    </birthdate>
+    <email>Lyric43@yahoo.com</email>
+  </person>
+  <person>
+    <name>
+      <first_name>Kristopher</first_name>
+      <last_name>Pollich</last_name>
+    </name>
+    <address>
+      <street>Baker Street</street>
+      <number>22</number>
+    </address>
+    <birthdate>
+      <day>06</day>
+      <month>02</month>
+      <year>1978</year>
+    </birthdate>
+    <email>Brekke.Helene@yahoo.com</email>
+  </person>
+</people>
