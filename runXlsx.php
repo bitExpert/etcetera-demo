@@ -3,7 +3,7 @@ require 'src/bootstrap.php';
 
 use bitExpert\Etcetera\Extractor\Config\YamlConfigReader;
 
-new bitExpert\Etcetera\Extractor\Config\JsonConfigReader;
+use bitExpert\Etcetera\Extractor\Config\JsonConfigReader;
 use bitExpert\Etcetera\Extractor\StandardExtractorFactory;
 use bitExpert\Etcetera\Extractor\Property\PropertyConverterTypeFactory;
 use bitExpert\Etcetera\Processor\Processor;
@@ -24,7 +24,7 @@ use bitExpert\EtceteraDemo\Extractor\Entity\Decorator\Uuid4Decorator;
 /*$configReader = new YamlConfigReader();
 $config = $configReader->read($currentDir . '/config/people/extractor.yml');*/
 
-$configReader = new \bitExpert\Etcetera\Extractor\Config\JsonConfigReader();
+$configReader = new JsonConfigReader();
 $config = $configReader->read('config/people/extractor.json');
 
 // create the extractor factory
