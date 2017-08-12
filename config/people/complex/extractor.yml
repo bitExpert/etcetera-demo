@@ -1,0 +1,27 @@
+entities:
+  person:
+    properties:
+      firstname:
+        candidates:
+          name/first_name: 1
+      laststname:
+        candidates:
+          name/last_name: 1
+      street:
+        candidates:
+          address/street: 1
+      number:
+        candidates:
+          address/number: 1
+      birthdateDay:
+        candidates:
+          birthdate/day: 1
+      birthdateMonth:
+        candidates:
+          birthdate/month: 1
+      birthdateYear:
+        candidates:
+          birthdate/year: 1
+      email:
+        candidates:
+          email: 1

@@ -63,3 +63,18 @@ Instanciate the Processor with reader, extractor and writer and call
 After having completed it's work, you may either see a plenty of output
 on the console ([```ConsoleWriter```](src/bitExpert/EtceteraDemo/Writer/ConsoleWriter.php)) or a bunch of CSV files in the 
 ```/out``` folder, representing a set of entities or relations (one file each).
+
+## Deep dive (see ```/runXmlSubtags.php```)
+In this example the GenericXmlReader (XML) 
+reader is used for our [```dummy data```](data/people.xml) file.
+
+To set the Root from which the reader should start looking for tags to read from use 
+[```setRootNodeXPath```](vendor/bitexpert/etcetera/src/bitExpert/Etcetera/Reader/File/Xml/GenericXmlReader.php#setRootNodeXPath)
+function. Per default the root node is set to "//".
+To set the depth in which the reader looks for sub tags starting at the root node use the
+ [```setMaxDepth```](vendor/bitexpert/etcetera/src/bitExpert/Etcetera/Reader/File/Xml/GenericXmlReader.php#setMaxDepth)
+ function. If no maximum depth is configured the reader will only search for direct children of the configured root node.
+ 
+ The candidates in the [```configuration```](config/people/complex/extractor.yml) for the extractor can be defined in xpath style
+   starting at the configured root node of the reader.
+ 
